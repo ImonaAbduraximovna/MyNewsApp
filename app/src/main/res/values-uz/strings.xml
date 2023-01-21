@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="title">Yangliklar</string>
+    <string name="home">Uy</string>
+    <string name="settings">Sozlash</string>
+    <string name="category">Kategoriya</string>
+    <string name="language">Til</string>
+    <string name="day">Kun</string>
+    <string name="night">Tun</string>
+</resources>

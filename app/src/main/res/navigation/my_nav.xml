@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainScreen">
+
+
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.newsapp.ui.main.MainScreen"
+        android:label="screen_main"
+        tools:layout="@layout/screen_main" >
+        <action
+            android:id="@+id/action_mainScreen_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_mainScreen_to_categoryPage"
+            app:destination="@id/categoryPage" />
+        <action
+            android:id="@+id/action_mainScreen_to_savedPage"
+            app:destination="@id/savedPage" />
+        <action
+            android:id="@+id/action_mainScreen_to_itemScreen"
+            app:destination="@id/itemScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_mainScreen_to_settingsScreen"
+            app:destination="@id/settingsScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.example.newsapp.ui.main.home.HomePage"
+        android:label="page_home"
+        tools:layout="@layout/page_home" />
+    <fragment
+        android:id="@+id/categoryPage"
+        android:name="com.example.newsapp.ui.main.category.CategoryPage"
+        android:label="page_category"
+        tools:layout="@layout/page_category" />
+    <fragment
+        android:id="@+id/savedPage"
+        android:name="com.example.newsapp.ui.main.saved.SavedPage"
+        android:label="page_saved"
+        tools:layout="@layout/page_saved" />
+    <fragment
+        android:id="@+id/itemScreen"
+        android:name="com.example.newsapp.ui.itemscreem.ItemScreen"
+        android:label="screen_item"
+        tools:layout="@layout/screen_item" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.newsapp.ui.searchScreen.SearchFragment"
+        android:label="screen_search"
+        tools:layout="@layout/screen_search" />
+    <fragment
+        android:id="@+id/settingsScreen"
+        android:name="com.example.newsapp.ui.settings.SettingsScreen"
+        android:label="screen_settings"
+        tools:layout="@layout/screen_settings" />
+</navigation>

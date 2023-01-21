@@ -1,0 +1,1 @@
+package com.example.newsapp.core.utilsinterface FragmentDataChange {    fun changedData()}
